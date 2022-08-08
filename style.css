@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
+
+td{
+    border: 1px solid chocolate;
+    padding: 20px;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.671);
+    color: white;
+}
+
+h1{
+    font-variant: small-caps;
+    color:black;
+}
