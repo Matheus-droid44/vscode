@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            background-color: darkcyan;
+        }
+
+        h1{
+            background-image: linear-gradient(to left,black , dimgray);
+            color:white;
+            padding: 10px;
+        }
+
+        form{
+            background-color:rgb(48, 5, 78);
+            color: aliceblue;
+            font-size: larger;
+            display: inline-block;
+            width: 400px;
+            padding: 20px;
+            border: 5px solid chocolate;
+            border-radius: 30px;
+            position: relative;
+            left: 50px;
+        }
+
+        #e{
+            background-color: darkred;
+        }
+
+        #e:hover{
+            background-color: red;
+            padding: 5px;
+        }
+
+        #imedia,#idata,#inome,#iemail{
+            background-color: cornflowerblue;
+        }
+
+        #imedia:hover,#idata:hover,#inome:hover,#iemail:hover{
+            background-color: grey;
+            }
+    </style>
+</head>
+<body>
+    <h1>
+        Teste de formulario
+    </h1>
+
+    <form action="" autocomplete="on">
+
+        <P>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required autocomplete="name">
+        </P>
+
+        <p>
+            <label for="imedia">Média: </label>
+            <input type="number" name="media" id="imedia" step="0.1" min="0" max="10" required>
+        </p>
+
+        <p>
+            <label for="idata">Data: </label>
+            <input type="date" name="data" id="idata" required>
+        </p>
+        
+        <p>
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail" autocomplete="email" required>
+        </p>
+
+        <p>
+            <input type="submit" id="e" value="Enviar">
+            <input type="reset" id="e" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>

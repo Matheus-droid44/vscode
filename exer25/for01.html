@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 139, 0.829);
+        }
+
+        h1{
+            background-image: linear-gradient(to right,darkred,darkgreen);
+        }
+
+        form{
+            position: relative;
+            background-color: rgb(60, 2, 85);
+            display:inline-block;
+            border: 2px solid darkred;
+            padding: 20px;
+            border-radius: 10px;
+            width: 270px;
+            left: 30%;
+        }
+        p{
+            color: crimson;
+            font-weight: bolder;
+        }
+        #isobrenome,#inome{
+            background-color: dimgray;
+        }
+
+        #e{
+            background-color: darkred;
+            
+        }
+
+        #e:hover{
+            background-color: red;
+        }
+
+        #isobrenome:hover,#inome:hover{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Meu primeiro formulario
+    </h1>
+
+    <form autocomplete="off" action="">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p> 
+        <p><input type="submit" id="e" value="Enviar"></p>
+    </form>
+</body>
+</html>

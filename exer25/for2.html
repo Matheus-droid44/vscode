@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 139, 0.829);
+        }
+
+        h1{
+            background-image: linear-gradient(to right,darkred,darkgreen);
+        }
+
+        form{
+            position: relative;
+            background-color: rgb(60, 2, 85);
+            display:inline-block;
+            border: 2px solid darkred;
+            padding: 20px;
+            border-radius: 10px;
+            width: ;
+            left: 30%;
+        }
+        p{
+            color: crimson;
+            font-weight: bolder;
+        }
+        #isen,#iusu{
+            background-color: dimgray;
+        }
+
+        #e{
+            background-color: darkred;
+            
+        }
+
+        #e:hover{
+            background-color: red;
+        }
+
+        #isen:hover,#iusu:hover{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Usuários</h1>
+    
+    <form action="" method="post" autocomplete="on">
+
+        <p>
+
+            <label for="iusu">Usuário:</label> <input type="text" name="usu" id="iusu"  required autocomplete="username">
+
+        </p>
+        <p>
+
+            <label for="isen">Senha:</label> <input type="password" name="sen" id="isen" required autocomplete="current-password">
+
+        </p>
+        <p>
+
+            <input type="submit" id="e" value="Cadastrar">
+            <input type="reset" id="e" value="Limpar">
+
+        </p>
+
+    </form>
+
+</body>
+</html>
