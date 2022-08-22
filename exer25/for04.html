@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+    
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        body{
+            background-color: rgb(12, 71, 37);
+        }
+
+        h1{
+            color:black;
+            text-align: center;
+        }
+
+        header{
+            background-image: linear-gradient(to left,white ,red);
+            height: 100px;
+            padding: 20px;
+        }
+
+        fieldset{
+            background-color:rgb(48, 5, 78);
+            border: 5px solid chocolate;
+            color: aliceblue;
+            font-size: larger;
+            width: 500px;
+            height: 150px;
+            padding: 30px;
+            border-radius: 30px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        fieldset#p{
+            background-color:rgb(48, 5, 78);
+            border: 5px solid chocolate;
+            color: aliceblue;
+            font-size: larger;
+            width: 500px;
+            height: 50px;
+            padding: 30px;
+            border-radius: 30px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: -10px;
+        }
+
+        .pp{
+            background-color:rgb(48, 5, 78);
+            border: 5px solid chocolate;
+            color: aliceblue;
+            font-size: larger;
+            width: 500px;
+            height: 250px;
+            padding: 30px;
+            border-radius: 30px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: -10px;
+        }
+
+        legend{
+            font-size: larger;
+            background-color: brown;
+            border-radius:10px;
+            padding: 5px;
+        }
+
+        #e{
+            background-color: darkred;
+            border: 0;
+            padding: 5px;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            
+        }
+
+        #e:hover{
+            background-color: red;
+            padding: 5px;
+        }
+
+        #iu,#is,#ie{
+            background-color: cornflowerblue;
+            margin: 7px;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        #ie:hover,#iu:hover,#is:hover{
+            background-color:grey;
+         }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            background-color:aquamarine;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        nav{
+            display: flex;
+            justify-content: end;         
+        }
+
+        nav a:hover{
+            background-color:blue;
+            font-weight: bolder;
+        }
+
+        div{
+            columns: 2 ;
+        }      
+        
+        .op,.pi{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>Exemplo de Formulario</h1>
+
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#">Animes </a>
+            <a href="#">Games</a>
+            <a href="#">Musicas</a>
+
+        </nav>
+
+    </header>
+        
+    <fieldset>
+
+        <legend>
+
+            Dados
+
+        </legend>
+
+        <form action="Casdatro.js" method="get" autocomplete="on">
+            <p>
+                <label for="iu">Usuario: </label><input type="text" name="u" id="iu" required autocomplete="name">
+            </p>
+            <p>
+                <label for="ie">E-mail: </label>
+                <input type="email" name="e" id="ie" required autocomplete="email">
+            </p>
+        
+            <p>
+                <label for="is">Senha: </label>
+                <input type="password" name="s" id="is" required autocomplete="new-password" maxlength="8">
+            </p>
+
+            <p class="pi">
+                <label for="ifo">Foto para cadastro: </label>
+                <input type="file" name="fo" id="ifo">
+
+            </p>
+
+    </form>
+
+    </fieldset>
+
+    <fieldset id="p">
+
+        <legend>Sexo</legend>
+
+        <p>
+
+            <form action="">
+                <input type="radio" name="m" id="imp">
+                <label for="imp">Masculino </label>
+                <input type="radio" name="m" id="if">
+                <label for="if">Feminino </label>
+            </form>
+
+       </p>
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Animes favoritos</legend>
+
+        <div>
+            <input type="checkbox" name="n" id="in">
+            <label for="in">Naruto</label> <br>
+            <input type="checkbox" name="d" id="id">
+            <label for="id">Drango Ball</label> <br>
+            <input type="checkbox" name="b" id="ib">
+            <label for="ib">Black Clover</label> <br>
+            <input type="checkbox" name="o" id="io">
+            <label for="io">Overlord</label> <br>
+            <input type="checkbox" name="fa" id="ifa">
+            <label for="ifa">Fairy Tail</label> <br>
+            <input type="checkbox" name="bl" id="ibl">
+            <label for="ibl">Bleach</label> <br>
+        </div>
+
+        <p class="op">
+            <label for="ist">Nivel de satisfação: </label>
+            <input type="range" name="st" id="ist" value="0">
+        </p>
+
+        <p>
+
+            <input type="submit" id="e" value="Cadastrar">
+            
+         </p>
+
+    </fieldset>
+
+    <fieldset class="pp">
+
+        <legend>Action</legend>
+
+        <form action="" method="post">
+            <p>
+                <label for="in">Animes: </label>
+                <select name="Animes" id="in">
+                    <option value="" selected></option>
+                    <optgroup label="Animes Raiz">
+                        <option value="N">Naruto</option>
+                        <option value="D">Drango Ball</option>
+                        <option value="O">One peice</option>
+                        <option value="F">Fairy tail</option>
+                    </optgroup>
+                    <optgroup label="Animes Modinha">
+                        <option value="DE">Demo slayer</option>
+                        <option value="OV">Overlord</option>
+                        <option value="B">Bleach</option>
+                        <option value="BC">Black Clover</option>
+                    </optgroup>
+    
+                </select>
+                
+            </p>
+    
+            <p>
+                <label for="ifo">Filmes: </label>
+                <input type="text" name="foi" id="ifoi" list="fi">
+                <datalist id="fi">
+                    <option>Filme A</option>
+                    <option>Filme B</option>
+                    <option>Filme C</option>
+                    <option>Filme D</option>
+                    <option>Filme E</option>
+                </datalist>
+            </p>
+    
+            <P>
+                <label for="ims">Mensagem</label> <br>
+                <textarea name="mg" id="ims" cols="30" rows="10"></textarea>
+            </P>
+        </form>
+
+    </fieldset>
+
+</body>
+</html>

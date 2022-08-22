@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+</head>
+<body>
+     <h1>
+        Fomulario
+     </h1>
+
+     <form action="" method="post" autocomplete="on">
+
+        <p>
+            <label for="in">Animes: </label>
+            <select name="Animes" id="in">
+                <option value="" selected></option>
+                <optgroup label="Animes Raiz">
+                    <option value="N">Naruto</option>
+                    <option value="D">Drango Ball</option>
+                    <option value="O">One peice</option>
+                    <option value="F">Fairy tail</option>
+                </optgroup>
+                <optgroup label="Animes Modinha">
+                    <option value="DE">Demo slayer</option>
+                    <option value="OV">Overlord</option>
+                    <option value="B">Bleach</option>
+                    <option value="BC">Black Clover</option>
+                </optgroup>
+
+            </select>
+            
+        </p>
+
+        <p>
+            <label for="ifo">Filmes: </label>
+            <input type="text" name="foi" id="ifoi" list="fi">
+            <datalist id="fi">
+                <option>Filme A</option>
+                <option>Filme B</option>
+                <option>Filme C</option>
+                <option>Filme D</option>
+                <option>Filme E</option>
+            </datalist>
+        </p>
+
+        <P>
+            <label for="ims">Mensagem</label> <br>
+            <textarea name="mg" id="ims" cols="30" rows="10"></textarea>
+        </P>
+
+        <P>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </P>
+
+     </form>
+
+</body>
+</html>

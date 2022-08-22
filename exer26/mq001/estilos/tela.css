@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* Estilos para a tela  */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    background-color: #e8608c;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+menu ul{
+    list-style-type: none;
+}
+
+menu li{
+    display: inline-block;
+    background-color: #71cbc4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+article{
+    width: 600px;
+    display:block;
+    top:50px;
+    margin: auto;
+    text-align: justify;
+    background-color: #cdd56e;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
