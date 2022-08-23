@@ -3,8 +3,9 @@
 body, html{
     background-image: url(../imagens/cev-portrait.jpg);
     color:#2484bf;
+    background-position: center bottom;
 }
 
 h1{
-    color: #2484bf;
+    color: #d92365;
 }

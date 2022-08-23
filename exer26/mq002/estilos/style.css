@@ -10,7 +10,7 @@ html, body{
     background-color:#d92365;
     width: 100vw;
     height: 100vh;
-    background-size: contain;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
