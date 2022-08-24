@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* Impressão */
+
+@media print {
+    main{
+        font-family: 'Courier New', Courier, monospace;
+        border: 5px solid darkred;
+    }
+
+        img#cell{display: none;}
+        img#tab{display: none;}
+        img#tv{display: none;}
+        img#pc{display: none;}
+        img#pt{display: block;}
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../back-tablet.jpg);
+    }
+        img#cell{display: none;}
+        img#tab{display: block;}
+        img#tv{display: none;}
+        img#pc{display: none;}
+        img#pt{display: none;}
+}
+
+/* PC */
+
+@media screen and (min-width:992px)  and (max-width:1200px){
+    body{
+        background-image: url(../back-pc.jpg);
+    }
+
+        img#cell{display: none;}
+        img#tab{display: none;}
+        img#tv{display: none;}
+        img#pc{display: block;}
+        img#pt{display: none;}
+}
+
+/* Grades telas */
+
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../back-tv.jpg);
+    }
+
+    main{
+        width: 800px;
+    }
+
+        img#cell{display: none;}
+        img#tab{display: none;}
+        img#tv{display: block;}
+        img#pc{display: none;}
+        img#pt{display: none;}
+}
